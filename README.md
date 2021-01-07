@@ -1,4 +1,4 @@
 # Vaniquiste-rest-api
-create .env 
-npm i 
+create .env <br>
+npm i <br>
 npm run server
