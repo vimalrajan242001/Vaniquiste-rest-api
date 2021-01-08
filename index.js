@@ -18,8 +18,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 //defining routes
-app.use("/api/users",require('./routes/api/users'))
-app.use("/api/auth",require('./routes/api/auth'))
+app.use("/api/users", require("./routes/api/users"));
+app.use("/api/auth", require("./routes/api/auth"));
+app.use("/api/admin/users", require("./routes/admin/users"));
+app.use("/api/admin/auth", require("./routes/admin/auth"));
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
